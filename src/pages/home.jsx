@@ -1,16 +1,8 @@
-import { news } from "../data/dummyNews";
-import NewsCard from "../components/NewsCard";
-
-function Home() {
+export default function Home() {
   return (
     <div style={{ padding: "20px" }}>
-      <h2>Berita Terbaru</h2>
-
-      {news.map((item) => (
-        <NewsCard key={item.id} title={item.title} category={item.category} content={item.content} />
-      ))}
+      <h1>Halaman Home Berita</h1>
+      <p>Ini sudah jalan 🚀</p>
     </div>
   );
 }
-
-export default Home;
